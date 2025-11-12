@@ -1,0 +1,10 @@
+<script>
+  window.addEventListener("load", () => {
+    document.querySelectorAll('*').forEach(el => {
+      if (el.scrollWidth > document.documentElement.clientWidth) {
+        el.style.outline = "2px solid red";
+        console.log("⚠️ Desbordando:", el);
+      }
+    });
+  });
+</script>

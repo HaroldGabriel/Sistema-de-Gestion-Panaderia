@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pastelería Buenaventura ofrece tortas personalizadas, postres artesanales y cupcakes únicos en Lima. Realiza tu pedido online y disfruta del sabor de la tradición.">
+    <meta name="keywords" content="pastelería, tortas, postres, cupcakes, dulces, repostería artesanal, tortas personalizadas, Pastelería Buenaventura">
+    <meta name="author" content="Harold Barrientos - Diego Buenaventura" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+    <meta property="og:title" content="Pastelería Buenaventura | Repostería artesanal con amor" />
+    <meta property="og:description" content="Tortas, pasteles y postres artesanales para cada ocasión. Descubre nuestros sabores únicos en Pastelería Buenaventura." />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://haroldgabriel.github.io/web-design" />
+    <meta property="og:image" content="https://haroldgabriel.github.io/web-design/img/logo_pasteleria.jpeg" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pastelería Buenaventura | Repostería artesanal con amor" />
+    <meta name="twitter:description" content="Tortas, pasteles y postres artesanales para cada ocasión. Descubre nuestros sabores únicos en Pastelería Buenaventura." />
+    <meta name="twitter:image" content="https://haroldgabriel.github.io/web-design/img/logo_pasteleria.jpeg" />
+    <!-- Favicon e icono -->
+    <link rel="icon" href="img/logo_original.png" type="image/x-icon">
+    <link rel="canonical" href="https://haroldgabriel.github.io/web-design" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>pasteleria buenaventura</title>
+</head>
+    <body>
+        <!-- ========================================
+                 HEADER CON NAVEGACIÓN RESPONSIVE
+        ======================================== -->
+        <header class="header-main">
+            <div class="logo">
+                <img src="img/logo_original.png" alt="">
+            </div>
+            <h1>Pastelería Buenaventura</h1>
+            <!-- MENÚ MÓVIL -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-icon">☰</label>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <label for="menu-toggle" class="close-btn">✖</label>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lista.php">Menú</a></li>
+                    <!--<li><a href="#">Acerca de</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#galeria">Galería</a></li>-->
+                    <li><a href="pedidos.php">Pedidos</a></li>
+                    <li><a href="../proyecto_tasayco/public/index.php">Backoffice</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="separador-section"></div>
+        <!-- ========================================
+                 CONTENIDO PRINCIPAL
+        ======================================== -->
+        <main>
+            <section class="hero-img-content">
+                <!--<img src="img_principal.jpg" alt="img_hero_content" loading="lazy">-->
+                <div class="slide" style="background-image: url('img_principal.jpg');"></div>
+                <div class="slide" style="background-image: url('img/img_prueba3.jpg');"></div>
+                <div class="slide" style="background-image: url('img/img_prueba4.jpg');"></div>
+                <div class="slide" style="background-image: url('img/img_prueba5.jpg');"></div>
+            </section>
+            <section class="text-content">
+                <h2>¡Las más pedidas!</h2>
+                <p>Las preferidas por nuestros clientes.</p>
+                <p>encuéntralas en sus diferentes tamaños y sabores</p>
+            </section>
+            <section class="list-content">
+                <div class="list-container">
+                    <div class="slide-product-card">
+                        <img src="img/img_productos/chocolate.jpeg" alt="Pastel de chocolate">
+                        <p>Pastel de chocolate</p>
+                        <p>S/. 30.00</p>
+                    </div>
+                    <div class="slide-product-card">
+                        <img src="img/img_productos/vainilla.jpeg" alt="Pastel de vainilla">
+                        <p>Pastel de vainilla</p>
+                        <p>S/. 28.00</p>
+                    </div>
+                    <div class="slide-product-card">
+                        <img src="img/img_productos/fresa.jpeg" alt="Pastel de fresa">
+                        <p>Pastel de fresa</p>
+                        <p>S/. 26.00</p>
+                    </div>
+                    <div class="slide-product-card">
+                        <img src="img/img_productos/zanahoria_1.jpeg" alt="Pastel de zanahoria">
+                        <p>Pastel de zanahoria</p>
+                        <p>S/. 25.00</p>
+                    </div>
+                    <div class="slide-product-card">
+                        <img src="img/img_productos/redvelvet.jpeg" alt="Pastel de red velvet">
+                        <p>Pastel de red velvet</p>
+                        <p>S/. 32.00</p>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="btn-ver-mas">
+                <p class="ver-mas"><a href="lista.php">Ver más</a></p>
+            </div>
+             <div class="separador-section"></div>
+            <section class="content-skin">
+                <div class="container">
+                    <div class="grid1">
+                        <div class="content-description">
+                            <p>¡Cada torta es única como tú!</p>
+                            <p>Por eso en Pastelería Buenaventura personalizamos tu pedido.</p>
+                            <p>¿Estás próxima a casarte, celebrar un bautizos o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
+                        </div>
+                        <div class="img-content">
+                            <img src="img/img_list_content/pastel1.jpg" alt="logo_img_content">
+                        </div>                        
+                        
+                    </div>
+                    <div class="grid2">
+                        <ul>
+                            <li><img src="img/img_list_content/pastel2.jpg" alt="logo_img1"></li>
+                            <li><img src="img/img_list_content/pastel3.jpg" alt="logo_img2"></li>
+                            <li><img src="img/img_list_content/pastel4.jpg" alt="logo_img3"></li>
+                            <li><img src="img/img_list_content/pastel5.jpg" alt="logo_img4"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="separador-section"></div>
+        <!-- ========================================
+                        FOOTER
+         ======================================== -->
+        <footer>
+            <div class="footer-container">
+                <section class="footer-main">                   
+                    <div class="footer-item">                       
+                        <div class="footer-libro-reclamaciones">
+                            <a href="#home"><img src="img/img_footer/libro_reclamaciones.png" alt="logo_libro_reclamaciones"></a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-contact">
+                            <h3>Contacto</h3>
+                            <p>Teléfono: 123-456-7890</p>
+                            <p>Email: contacto@pasteleriabuenaventura.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Redes Sociales</h3>
+                        <div class="footer-social-media">                         
+                            <a href="#"><img src="img/img_footer/facebook.png" alt="logo_Facebook"></a>
+                            <a href="#"><img src="img/img_footer/instagram.jpeg" alt="logo_Instagram"></a>
+                            <a href="#"><img src="img/img_footer/twiter.png" alt="logo_Twitter"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer-copyright">                  
+                    <div class="footer-metodos-pago">
+                        <ul>
+                            <li><img src="img/img_footer/Visa-Logo.jpg" alt="logo_Visa"></li>
+                            <li><img src="img/img_footer/mastercard-logo.jpg" alt="logo_MasterCard"></li>
+                            <li><img src="img/img_footer/paypal.png" alt="logo_PayPal"></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright-text">
+                        <p>&copy; 2025 Pastelería Buenaventura. Todos los derechos reservados.</p>
+                    </div>              
+                </section>
+            </div>
+        </footer>       
+    </body>
+</html>
