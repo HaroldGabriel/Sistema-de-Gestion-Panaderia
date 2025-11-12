@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f7f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header-main {
+    background: #6c63ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container-mantenimiento {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px;
+}
+
+
+.form-mantenimiento-usuario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-mantenimiento-usuario input,
+.form-mantenimiento-usuario select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 1em;
+    background: #f7f7fa;
+}
+
+.form-mantenimiento-usuario .btn-guardar {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-right: 8px;
+}
+
+.form-mantenimiento-usuario .btn-guardar:hover {
+    background: #5548c8;
+}
+
+.form-mantenimiento-usuario .btn-cancelar {
+    background: #bdbdbd;
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.form-mantenimiento-usuario .btn-cancelar:hover {
+    background: #757575;
+    color: #fff;
+}
+
+.mensaje-exito {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
+
+/* Back button helper (volver) */
+.form-volver {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.btn-volver {
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.12s ease-in-out, transform 0.08s;
+}
+
+.btn-volver:hover {
+    background: rgba(0,0,0,0.04);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+    .container-mantenimiento {
+        padding: 12px;
+    }
+    .form-mantenimiento input,
+    .form-mantenimiento select {
+        padding: 8px 6px;
+    }
+}

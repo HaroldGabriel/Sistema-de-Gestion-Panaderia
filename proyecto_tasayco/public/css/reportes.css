@@ -1,0 +1,174 @@
+.reportes-pages{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+
+    .head-reporte{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Estilos para los botones del formulario de selección de reporte */
+        nav form{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        input.menu-item{
+            -webkit-appearance: none;
+            appearance: none;
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 10px;
+            background: #f4f4f4;
+            color: #6c63ff;
+            border: 1px solid #e0e0e0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, transform 0.08s ease;
+        }
+        input.menu-item:hover{
+            background: #6c63ff;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        /* Si el servidor imprime la clase .active en el input seleccionado, se resaltará */
+        input.menu-item.active,
+        input.menu-item[aria-pressed="true"]{
+            background: #6c63ff;
+            color: #fff;
+            border-color: #6c63ff;
+            cursor: default;
+            transform: none;
+        }
+    }
+    .main-page-ventas{
+        width: 100%;
+        height: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "table grafico1"
+        "table grafico2";
+
+        .main-table-ventas{
+            grid-area: table;
+            width: 100%;
+            height: 40%;
+            .table-ventas{
+                width: 100%;
+                
+                border-collapse: collapse;
+
+                th, td {
+                    padding: 12px 15px;
+                    border: 1px solid #ddd;
+
+                    &:first-child {
+                        width: 150px;
+                    }
+                }
+
+                th {
+                    background-color: #f4f4f4;
+                }
+            }
+            
+        }
+    }
+    .grafico1{
+        grid-area: grafico1;
+        width: 100%;
+        height: 100%;
+
+        #BarChartVentas{
+            width: 70%;
+            height: 100%;
+        }
+    }
+    .grafico2{
+        grid-area: grafico2;
+        width: 100%;
+        height: 100%;
+
+        #barChartHorizontal{
+            width: 80% !important;
+            height: 100%;
+        }
+    }
+}
+
+/* Paginación común */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.paginacion a,
+.paginacion span {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #6c63ff;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.paginacion a:hover {
+    background: #6c63ff;
+    color: #fff;
+    border-color: #6c63ff;
+}
+
+.paginacion .active,
+.paginacion a.active {
+    background: #6c63ff;
+    color: #fff;
+    border-color: #6c63ff;
+    cursor: default;
+}
+
+.paginacion .disabled {
+    color: #bdbdbd;
+    background: #fafafa;
+    border-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Soporte opcional para botones submit dentro de paginación */
+.paginacion input[type="hidden"] { display: none; }
+
+.paginacion button[type="submit"] {
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #6c63ff;
+    font-weight: 500;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin: 0 2px;
+}
+.paginacion button[type="submit"]:hover {
+    background: #6c63ff;
+    color: #fff;
+    border-color: #6c63ff;
+}
+.paginacion button[type="submit"][style*="font-weight:bold;"] {
+    background: #6c63ff;
+    color: #fff;
+    border-color: #6c63ff;
+    cursor: default;
+}

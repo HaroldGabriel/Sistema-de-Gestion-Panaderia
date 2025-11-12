@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------------------
+                    HEADER
+-----------------------------------------*/
+
+.main-header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+
+    .logo{
+        height: 90%;
+        /*width: 50%;*/
+        .contain-logo{
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            .logo-img{
+                width: 100%;
+                height: 100%;
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .barra-busqueda{
+        width: 50%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        border-radius: 30px;
+        gap: 10px;
+        padding: 0 20px;
+
+        input{
+            width: 60%;
+            height: 60%;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding-inline: 10px 5px;
+        }
+        
+        .btn-search{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+
+            i{
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+/*----------------------------------------
+                    MAIN
+-----------------------------------------*/
+main{
+    flex: 1;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    .menu-aside{
+        height: 100%;
+
+        .main-menu-aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            gap: 10px;
+            .menu-form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .menu-item{
+                    all: unset;
+                    padding: 10px;
+                    width: 80%;
+                    background: gray;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: white;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+                }
+
+                .menu-item:hover{
+                    background-color:  #ddd;
+                    color: black;               
+                }
+            }
+        }
+    }
+
+    
+    
+    .menu-aside{
+        width: 15%;
+        height: 100%;
+        background-color: gray;
+    }
+    /*----------------------------------------
+                    PAGES CONTENT
+    -----------------------------------------*/
+    .content-page{
+        width: 85%;
+        height: 100%;
+        background-color: #ffffff;
+        overflow-y: auto; 
+
+        .main-content-page{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            .img-principal{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+               
+        }
+    }
+
+}
+
+/*----------------------------------------
+                    FOOTER
+-----------------------------------------*/
+/* Estilos para el botón Cerrar sesión en el aside */
+.logout-aside{
+    margin-top: 24px;
+    text-align: center;
+}
+.logout-aside .btn-logout{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #a9746e; /* tono más cálido y acorde con la paleta del sitio */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.15s ease, transform 0.08s ease;
+}
+.logout-aside .btn-logout:hover{
+    background: #8c5e52; /* versión más oscura del marrón */
+    transform: translateY(-2px);
+}
+.logout-aside .btn-logout:active{
+    transform: translateY(0);
+}
+.logout-aside .btn-logout:focus{
+    outline: 3px solid rgba(169,116,110,0.18);
+}
+
+@media (max-width: 700px){
+    .logout-aside .btn-logout{
+        width: 80%;
+    }
+}
+footer{
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
